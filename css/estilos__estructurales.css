@@ -1,11 +1,11 @@
 /*------FUENTES TIPOGRÁFICAs----------*/
 
 h1,h2{
-    font-family: 'Yesevea', sans-serif;
+    font-family: 'Yesevea One', sans-serif;
     font-size: 3em;
 }
 @font-face{
-    font-family: 'Yesevea';
+    font-family: 'Yesevea One';
     src: url('/fonts/Yeseva_One/YesevaOne-Regular.ttf');
 }
 
