@@ -58,7 +58,7 @@ function verProducto(id) {
   </div>`;
 
   divproducto.innerHTML = productoHTML;
-
+console.log(producto);
 
   // Ahora declaramos las variables  para que funcione los botones de sumar, restar y agregar carrito
   let cantidad = 0;
