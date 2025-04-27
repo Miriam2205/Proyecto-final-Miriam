@@ -59,6 +59,7 @@ function verProducto(id) {
 
   divproducto.innerHTML = productoHTML;
 
+
   // Ahora declaramos las variables  para que funcione los botones de sumar, restar y agregar carrito
   let cantidad = 0;
   const suma = divproducto.querySelector(".producto__compra--suma");
@@ -83,6 +84,8 @@ function verProducto(id) {
   });
 }
 
+verProducto(idProducto);
+
 //Funcion de añadir carrito
 function añadirCarrito(producto, cantidad) {
   //Obtener el carrito desde el localStorage
@@ -98,5 +101,4 @@ function añadirCarrito(producto, cantidad) {
   //Guardar el carrito actualizado en localStorage
   localStorage.setItem('carrito', JSON.stringify(carrito));
 }
-verProducto(idProducto);
 
