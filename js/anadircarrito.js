@@ -56,6 +56,7 @@ function verProducto(id) {
         </button>
     </div>
   </div>`;
+  
 
   divproducto.innerHTML = productoHTML;
 console.log(producto);
