@@ -26,6 +26,9 @@
 .hero__image {
     width: 50%;
 }
+.hero__title{
+    font-family: 'Yesevea One', 'sans-serif';
+}
 
 /*------PRODUCTOS-------*/
 .producto {
