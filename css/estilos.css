@@ -1,5 +1,7 @@
 /*------HERO------*/
-
+main{
+    margin-top: 4rem;
+}
 .hero {
     display: flex;
     align-items: center;
