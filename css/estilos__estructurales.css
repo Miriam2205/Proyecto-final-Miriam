@@ -27,10 +27,12 @@ h4,p{
 
 /*----------ESTRUCTURA GENERAL----------*/
  body {
+  display: flex;
+  flex-direction: column;
     background-color: #ecd5cc;
     color: #571018;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10rem;
+    margin: 5rem;
     min-height: 100vh;
    
 }
