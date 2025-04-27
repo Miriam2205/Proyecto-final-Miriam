@@ -2,8 +2,6 @@
 
 .producto {
     display: flex;
-    margin-top: 3rem;
-    padding: 3rem;
 
 }
 
@@ -84,8 +82,9 @@
 
     }
     .inputNumber{
-        width: 60%;
-        margin-left: 1.5rem;
+        width: 40%;
+        margin-left: 1.8rem;
+        
     }
     .producto_img{
         width: 100%;
