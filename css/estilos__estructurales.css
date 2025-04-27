@@ -6,7 +6,7 @@ h1,h2{
 }
 @font-face{
     font-family: 'Yesevea';
-    src: url(../../fonts/Yeseva_One/YesevaOne-Regular.ttf);
+    src: url('/fonts/Yeseva_One/YesevaOne-Regular.ttf');
 }
 
 h3{
@@ -14,7 +14,7 @@ h3{
 }
 @font-face{
     font-family: 'Poppins';
-    src: url(../../fonts/Poppins/Poppins-Bold.ttf);
+    src: url('/fonts/Poppins/Poppins-Bold.ttf');
 }
 
 h4,p{
@@ -22,7 +22,7 @@ h4,p{
 }
 @font-face{
     font-family: 'Poppins';
-    src: url(../../fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url('/fonts/Poppins/Poppins-SemiBold.ttf');
     
 }
 /*----------ESTRUCTURA GENERAL----------*/
