@@ -2,7 +2,6 @@
 
 .producto {
     display: flex;
-    padding: 0;
 
 }
 
@@ -89,7 +88,7 @@
         
     }
     .producto_img{
-        width: 100%;
+        width: 130%;
     }
     .producto{
         display: flex;
