@@ -11,6 +11,11 @@ window.addEventListener('DOMContentLoaded', function () {
     contenedor.innerHTML = "<p>Tu carrito está vacío.</p>";
     return;
   }
+  let nuevoTotal = 0;
+  carrito.forEach(p => {
+    nuevoTotal += p.precio * p.cantidad;
+  });
+  document.getElementById("total").textContent = nuevoTotal;
 
   //Código: para mostrar cada producto en la página
   //Declaramos que por defecto el precio es 0.
@@ -27,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function () {
             <img class="carrito__imagen" src="${producto.imagenProducto}" alt="${producto.titulo}">
         </div>
         <div class="container__descripcion">
-          <span class="material-symbols-outlined delete-icon" data-id="${producto.id}"> delete </span>
+          <span class="material-symbols-outlined delete-icon" data-id="${index}"> delete </span>
             <h3 class="carrito__titulo">${producto.titulo}</h3>        
             <p class="carrito__descripcion">${producto.descripcion} </p>
             <p><strong>Cantidad:</strong> ${producto.cantidad}</p>
@@ -62,12 +67,15 @@ window.addEventListener('DOMContentLoaded', function () {
       let nuevoTotal = 0;
       carrito.forEach(p => {
         nuevoTotal += p.precio * p.cantidad;
+        console.log("precio: " +  p.precio + " cantidad: " + p.cantidad +" y suma: " + nuevoTotal);
+
       });
       document.getElementById("total").textContent = nuevoTotal;
       //Recorre todos los iconos con la clase delete-icon y actualiza el id y precio total 
       document.querySelectorAll(".delete-icon").forEach((icon, newIndex) => {
         icon.setAttribute("data-id", newIndex);
       });
+      
     });
   });
 });
