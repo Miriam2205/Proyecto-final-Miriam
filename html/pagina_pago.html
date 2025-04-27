@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos__estructurales.css" class="rel">
+    <link rel="stylesheet" href="../css/reset.css" class="rel">
+    <link rel="stylesheet" href="../css/paginapago.css" class="rel">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
+    <link rel="stylesheet" href="../css/carrito.css" class="rel">
+    <script src="../js/mostrarcarrito.js"></script>
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <!--MENU-->
+        <nav class="nav">
+            <a href="index.html">
+                <img src="../img/logotipo/logotipo__abuelaemilia.png" alt="Logotipo Abuela Emilia"
+                    class="nav__logo">
+            </a>
+            <!--Creamos un div con la clase .nav__hamburguesa para que se vea el icono en pantallas pequeñas-->
+            <div class="nav__hamburguesa" id="nav__hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Aqui declaramos el nav, lo más importante es que el nav está compuesto del horizontal, que están los items principales y luego tenemos el nav vertical, que está dentro del horizontal y se trata del menu desplegable-->
+            <ul class="nav__horizontal" id="nav__horizontal">
+                <li class="nav__item menu__item--show">
+                    <a href="productos.html" class="nav__link">Productos</a>
+                    <ul class="nav__vertical">
+                        <li class="nav__vertical-item"><a href="./productos_donuts.html"
+                                class="nav__vertical-link">Donuts</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_croissants.html"
+                                class="nav__vertical-link">Croissants</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cinamonroll.html"
+                                class="nav__vertical-link">Cinamon Roll</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cookie.html"
+                                class="nav__vertical-link">Cookie</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="faq.html" class="nav__link">FaQ</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item">
+                    <a href="carrito.html" class="nav__link">
+                        <span class="material-icons-outlined">shopping_cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
+    <main class=" main">
+        <div class="pago__tarjeta">
+            <h3 class="pago__titulo">Métodos de pago</h3>
+            <hr>
+            <h3 class="pago__subtitulo">Tarjeta de crédico/débito</h3>
+            <!--Hacemos un formulario para que el usuario inserte los datos bancarios para pocesar el pago. Usamos POST porque es más seguro y al tratarse de datos bancarios es mejor opción-->
+            <form class="pago__formulario" action="proceso/pago" method="POST">
+
+                <label for="nombre" class="pago__label"></label>
+                <input type="text" class="pago__inputNombre" id="nombre" name="nombre" required placeholder="Nombre del titular">
+
+                <label for="correo" class="pago__label"></label>
+                <input type="email" class="pago__inputTarjeta" id="correo" name="correo" required placeholder="Número de tarjeta">
+
+                <label for="asunto" class="pago__label"></label>
+                <input type="text" class="pago__input" id="asunto" name="asunto" required placeholder="Fecha de expiración">
+
+                <label for="mensaje" class="pago__label"></label>
+                <input type="inputCaja" class="pago__input" id="mensaje" name="mensaje" required placeholder="CVV">
+
+                <label for="asunto" class="pago__label"></label>
+                <input type="text" class="pago__inputCorreo" id="asunto" name="asunto" required placeholder=" Correo electrónico">
+
+                <a href="../html/pago_confirmado.html" class="pago__boton">Pagar</a>
+            </form>
+        </div>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4>Abuela Emilia</h4>
+                <p>Reposteria artesanal con amor y tradicional</p>
+            </div>
+            <div class="footer__section">
+                <h4>Enlaces</h4>
+                <ul class="footer__lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="faq.html">FaQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <hr>
+                <p class="footer__copy">© 2025 Abuela Emilia. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/*Estilos para la página de pago*/
+.main{
+    margin: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+.pago__tarjeta {
+   flex:1;
+}
+.pago__forumulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.pago__input, .pago__boton{
+    width: 453px;
+    height: 40px;
+    border-radius: 6px;
+   padding: 1rem;
+   margin-top: 1rem;
+}
+.pago__inputNombre, .pago__inputTarjeta, .pago__inputCorreo{
+    width:100%;
+    height: 40px;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+.pago__boton{
+    display: flex;
+    justify-content: center;
+    background-color: #571018;
+    color: antiquewhite;
+    align-items: center;
+    text-decoration: none;
+}
+/*------MEDIA QUERIES-------*/
+/*-------para pantallas de tablets-------*/
+@media (max-width: 1024px){
+    .main{
+        margin: 3rem;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------para dispositivos móviles-------*/

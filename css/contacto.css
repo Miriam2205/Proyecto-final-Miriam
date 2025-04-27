@@ -1,0 +1,60 @@
+
+.contacto {
+    margin: 5rem;
+}
+
+.contacto__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+
+}
+
+.contacto__input {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.contacto__boton {
+    width: 90%;
+    height: 50px;
+    margin-top: 2rem;
+    background-color: #571018;
+    border: none;
+    color: #f8cfcf;
+}
+
+/*---------RESPONSIVE TABLET---------*/
+@media screen and (max-width: 1024px) {
+    .contacto__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
+/*---------RESPOSIVE MOBILE---------*/
+@media screen and (max-width: 600px) {
+    .contacto{
+        padding: 1rem;
+    }
+    .contacto h1 {
+        font-size: 2rem;
+    }
+    .inputCaja, textarea {
+        width: 250px;
+    }
+    .btnContacto {
+        width: 250px;
+   
+    }
+}

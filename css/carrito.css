@@ -1,0 +1,104 @@
+/*Codigo de css para la página de carrito*/
+
+.carrito{
+  margin: 5rem;
+  }
+  .carrito__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    flex-wrap: wrap; 
+  }
+  .carrito__principal{
+    flex: 2;/*flex 2, toma el doble de espacio*/
+    min-width: 200px;
+  }
+.container {
+  display: flex;/*Alinea los elementos del producto horizontalmente(image, titulo, descripción..)*/
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: #f5e1d8;
+  border: 3px;
+  border-color: #571018;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/*Estilos para el sidebar, el típico sidebar de una página de carrito que se vee el precio total etc*/
+.sidebar {
+  flex: 1;/*toma el espacio que queda*/
+  background-color: #f8e7e0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.sidebar__subtitulo{
+  margin-top: 1rem;
+}
+
+.carrito__imagen {
+  width: 180px;
+  height: auto;
+}
+
+.carrito__titulo {
+  font-size: 1.4rem;
+}
+
+.precioTotal {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:#571018;
+}
+
+.delete-icon {
+  position:static;
+  display: flex;
+  font-size: 3em;
+
+}
+
+.btn__pedido {
+  width: 200px;
+  height: 50px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #571018;
+  border: none;
+  color: white;
+}
+.btn__pedido a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*---------MEDIA QUERIES-----------*/
+/*---------Para Tablets------------*/
+@media (max-width: 1024px) {
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    align-items: center;
+  }  
+  .container__imagen {
+    width: 100%;
+    margin-bottom: 15px;
+
+  }
+
+}
+
+/*--------Para móviles--------*/
+@media (max-width: 600px){
+
+  .carrito{
+    margin: 3rem;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos__estructurales.css" class="rel">
+    <link rel="stylesheet" href="../css/reset.css" class="rel">
+    <link rel="stylesheet" href="../css/carrito.css" class="rel">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/carrito.css" class="rel">
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/mostrarcarrito.js"></script>
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <!--MENU-->
+        <nav class="nav">
+            <a href="index.html">
+                <img src="../img/logotipo/logotipo__abuelaemilia.png" alt="Logotipo Abuela Emilia"
+                    class="nav__logo">
+            </a>
+            <!--Creamos un div con la clase .nav__hamburguesa para que se vea el icono en pantallas pequeñas-->
+            <div class="nav__hamburguesa" id="nav__hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Aqui declaramos el nav, lo más importante es que el nav está compuesto del horizontal, que están los items principales y luego tenemos el nav vertical, que está dentro del horizontal y se trata del menu desplegable-->
+            <ul class="nav__horizontal" id="nav__horizontal">
+                <li class="nav__item menu__item--show">
+                    <a href="productos.html" class="nav__link">Productos</a>
+                    <ul class="nav__vertical">
+                        <li class="nav__vertical-item"><a href="./productos_donuts.html"
+                                class="nav__vertical-link">Donuts</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_croissants.html"
+                                class="nav__vertical-link">Croissants</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cinamonroll.html"
+                                class="nav__vertical-link">Cinamon Roll</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cookie.html"
+                                class="nav__vertical-link">Cookie</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="faq.html" class="nav__link">FaQ</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item">
+                    <a href="carrito.html" class="nav__link">
+                        <span class="material-icons-outlined">shopping_cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
+    <main class="carrito">
+        <h2 class="carrito__title">Carrito de compra </h2>
+        <div class="carrito__contenido">
+            <!-- Contenido principal que se veen los productos elegidos en el carrito -->
+            <div class="carrito__principal">
+                <div id="container">
+                    <!--<div id="container" class="container">
+                            <div class="container__imagen">
+                                <img class="carrito__imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                            </div>
+                            <div class="container__descripcion">
+                            <span class="material-symbols-outlined delete-icon" data-id="${}"> delete </span>
+                                <h3 class="carrito__titulo">${producto.titulo}</h3>        
+                                <p class="carrito__descripcion">${producto.descripcion} </p>
+                                <p><strong>Cantidad:</strong> ${producto.cantidad}</p>
+                                <p class="carrito__precio"><strong>Precio:</strong>${producto.precio}</p>
+                            </div>
+                        </div>-->
+                </div>
+            </div>
+
+            <!-- Aside, para mejorar la usabilidad de la página creamos un sidebar en la que vemos un resumen con el precio total y un boton para finalizar el pedido -->
+            <aside class="sidebar">
+                <h3 class="sidebar__titulo">Resumen</h3>
+                <hr>
+                <h3 class="sidebar__subtitulo">Total</h3>
+                <p id="total">Precio Total: 0€</p>
+                <div class="btn__pedido">
+                    <a href="../html/pagina_pago.html" target="_blank">Finalizar pedido</a>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4>Abuela Emilia</h4>
+                <p>Reposteria artesanal con amor y tradicional</p>
+            </div>
+            <div class="footer__section">
+                <h4>Enlaces</h4>
+                <ul class="footer__lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="faq.html">FaQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <hr>
+                <p class="footer__copy">© 2025 Abuela Emilia. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos__estructurales.css" class="rel">
+    <link rel="stylesheet" href="../css/reset.css" class="rel">
+    <link rel="stylesheet" href="../css/productos.css" class="rel">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/producto.js" defer></script>
+    <script src="../js/añadircarrito.js" defer></script>
+    
+    
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <!--MENU-->
+        <nav class="nav">
+            <a href="index.html">
+                <img src="../img/logotipo/logotipo__abuelaemilia.png" alt="Logotipo Abuela Emilia"
+                    class="nav__logo">
+            </a>
+            <!--Creamos un div con la clase .nav__hamburguesa para que se vea el icono en pantallas pequeñas-->
+            <div class="nav__hamburguesa" id="nav__hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Aqui declaramos el nav, lo más importante es que el nav está compuesto del horizontal, que están los items principales y luego tenemos el nav vertical, que está dentro del horizontal y se trata del menu desplegable-->
+            <ul class="nav__horizontal" id="nav__horizontal">
+                <li class="nav__item menu__item--show">
+                    <a href="productos.html" class="nav__link">Productos</a>
+                    <ul class="nav__vertical">
+                        <li class="nav__vertical-item"><a href="./productos_donuts.html"
+                                class="nav__vertical-link">Donuts</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_croissants.html"
+                                class="nav__vertical-link">Croissants</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cinamonroll.html"
+                                class="nav__vertical-link">Cinamon Roll</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cookie.html"
+                                class="nav__vertical-link">Cookie</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="faq.html" class="nav__link">FaQ</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item">
+                    <a href="carrito.html" class="nav__link">
+                        <span class="material-icons-outlined">shopping_cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
+        <!--Contenido principal en la vemos los productos de la categoria Croissants-->
+    <main class="main">
+        <section class="productos__grid">
+            <div class="Card">
+                <h3>Croissants clásico</h3>
+                <picture>
+                    <source srcset="../img/croissants/croissants_clasico.png" media="(min-width: 1024px)">
+                    <source srcset="../img/croissants/croissants_clasico.png" media="(min-width: 600px)">
+                    <img src="../img/croissants/croissants_clasico.png" class="producto__item">
+                </picture>
+                <!--Boton con la función que al hacer click se nos muestre la página de del producto. El número 8 identifica el producto-->
+                <button onclick="location.href='producto.html?id=8'" id="Btn__producto" class="Btn__producto">Comprar</button>
+            </div>
+            <div class="Card">
+                <h3>Croissants chocolate</h3>
+                <picture>
+                    <source srcset="../img/croissants/croissant__chocolate.png" media="(min-width: 1024px)">
+                    <source srcset="../img/croissants/croissant__chocolate.png" media="(min-width: 600px)">
+                    <img src="../img/croissants/croissant__chocolate.png" class="producto__item">
+                </picture>
+                <!--Boton con la función que al hacer click se nos muestre la página de del producto. El número 9 identifica el producto-->
+                <button onclick="location.href='producto.html?id=9'" id="Btn__producto" class="Btn__producto">Comprar</button>
+            </div>
+            <div class="Card">
+                <h3>Croissants Oreo</h3>
+                <picture>
+                    <source srcset="../img/croissants/croissant__oreo.png" media="(min-width: 1024px)">
+                    <source srcset="../img/croissants/croissant__oreo.png" media="(min-width: 600px)">
+                    <img src="../img/croissants/croissant__oreo.png" class="producto__item">
+                </picture>
+                <!--Boton con la función que al hacer click se nos muestre la página de del producto. El número 10 identifica el producto-->
+                <button onclick="location.href='producto.html?id=10'" id="Btn__producto" class="Btn__producto">Comprar</button>
+            </div>
+            <div class="Card">
+                <h3>Croissant Cheesecake</h3>
+                <picture>
+                    <source srcset="../img/croissants/croissants__cheesecake.png" media="(min-width: 1024px)">
+                    <source srcset="../img/croissants/croissants__cheesecake.png" media="(min-width: 600px)">
+                    <img src="../img/croissants/croissants__cheesecake.png" class="producto__item">
+                </picture>
+                <!--Boton con la función que al hacer click se nos muestre la página de del producto. El número 11 identifica el producto-->
+                <button onclick="location.href='producto.html?id=11'" id="Btn__producto" class="Btn__producto">Comprar</button>
+            </div>
+            <div class="Card">
+                <h3>Croissant pistacho</h3>
+                <picture>
+                    <source srcset="../img/croissants/croissants__pistacho.png" media="(min-width: 1024px)">
+                    <source srcset="../img/croissants/croissants__pistacho.png" media="(min-width: 600px)">
+                    <img src="../img/croissants/croissants__pistacho.png" class="producto__item">
+                </picture>
+                <!--Boton con la función que al hacer click se nos muestre la página de del producto. El número 12 identifica el producto-->
+                <button onclick="location.href='producto.html?id=12'" id="Btn__producto" class="Btn__producto">Comprar</button>
+            </div>
+
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4>Abuela Emilia</h4>
+                <p>Reposteria artesanal con amor y tradicional</p>
+            </div>
+            <div class="footer__section">
+                <h4>Enlaces</h4>
+                <ul class="footer__lista">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="desayunos.html">Desayunos</a></li>
+                    <li><a href="FaQ.html">FaQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <hr>
+                <p class="footer__copy">© 2025 Abuela Emilia. Todos los derechos reservados</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

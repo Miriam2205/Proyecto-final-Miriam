@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuela Emilia</title>
+    <link rel="stylesheet" href="../css/estilos__estructurales.css" class="rel">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/producto.js"></script>
+    <script src="../js/añadircarrito.js"></script>
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <!--MENU-->
+        <nav class="nav">
+            <a href="index.html">
+                <img src="../img/logotipo/logotipo__abuelaemilia.png" alt="Logotipo Abuela Emilia"
+                class="nav__logo">
+            </a>
+            <!--Creamos un div con la clase .nav__hamburguesa para que se vea el icono en pantallas pequeñas-->
+            <div class="nav__hamburguesa" id="nav__hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Aqui declaramos el nav, lo más importante es que el nav está compuesto del horizontal, que están los items principales y luego tenemos el nav vertical, que está dentro del horizontal y se trata del menu desplegable-->
+            <ul class="nav__horizontal" id="nav__horizontal">
+                <li class="nav__item menu__item--show">
+                    <a href="productos.html" class="nav__link">Productos</a>
+                    <ul class="nav__vertical">
+                        <li class="nav__vertical-item"><a href="./productos_donuts.html"
+                                class="nav__vertical-link">Donuts</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_croissants.html"
+                                class="nav__vertical-link">Croissants</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cinamonroll.html"
+                                class="nav__vertical-link">Cinamon Roll</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cookie.html"
+                                class="nav__vertical-link">Cookie</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="faq.html" class="nav__link">FaQ</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item">
+                    <a href="carrito.html" class="nav__link">
+                        <span class="material-icons-outlined">shopping_cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
+    <main class="main">
+        <!--HERO-->
+        <section class="hero">
+            <div class="hero__content">
+                <h1>PRUEBA NUESTRAS NUEVAS COOKIES DE PISTACHO</h1>
+                <p>Disponible en tienda y local </p>
+                <!--Esto es un boton en la que nos incita a pulsar para comprar el producto que se nos muestra. Y al clickar al boton se nos dirige a la página del producto individual y el DOM es capaz de reproducir la imagen y las características gracias a la funcion verProducto(22), el número es el id que identifica el producto y por eso es capaz de representarlo. 
+                En todos lo botones que vaya a la página individual del producto se le añadirá esta función-->
+                <button onclick="location.href='producto.html?id=22'" id="Btn__producto" class="Btn__producto">Comprar</button>
+
+            </div>
+            <div class="hero__image">
+                <picture>
+                    <source srcset="../img/cookies/cookie__pistacho.png" media="(min-width: 1024px)">
+                    <source srcset="../img/cookies/cookie__pistacho.png" media="(min-width: 600px)">
+                    <img src="../img/cookies/cookie__pistacho.png" alt="cookie pistacho" class="cookie__pistacho" loading="lazy">
+                </picture>
+            </div>
+        </section>
+        <!--PRODUCTOS-->
+        <section class="producto">
+            <h3>Nuestros prouctos más destacaos</h3>
+            <div class="productos__grid">
+                <div class="Card">
+                    <h3>Croissant de mantequilla </h3>
+                    <picture>
+                        <source srcset="../img/croissants/croissants_clasico.png" media="(min-width: 1024px)">
+                        <source srcset="../img/croissants/croissants_clasico.png" media="(min-width: 600px)">
+                        <img src="../img/croissants/croissants_clasico.png" alt="croissant" class="producto__item">
+                    </picture>
+
+                    <p>Croissants de mantequilla.<br>Un clásico que no defrauda</p>
+                    <!--Toma el id 8 del array -->
+                    <button onclick="location.href='producto.html?id=8'" id="Btn__producto" class="Btn__producto">Comprar</button>
+
+                </div>
+                <div class="Card">
+                    <h3>Donut de Lotus</h3>
+                    <picture>
+                        <source srcset="../img/donuts/donuts__lotus.png" media="(min-width: 1024px)">
+                        <source srcset="../img/donuts/donuts__lotus.png" media="(min-width: 600px)">
+                        <img src="../img/donuts/donuts__lotus.png" alt="croissant" class="producto__item">
+                    </picture>
+
+                    <p>Donut de con crema de lotus, nata y galleta por encima </p>
+                    <!--Toma el id 1 del array -->
+                    <button onclick="location.href='producto.html?id=1'" id="Btn__producto" class="Btn__producto">Comprar</button>
+                </div>
+                <div class="Card">
+                    <h3>Cinamon Roll</h3>
+                    <picture>
+                        <source srcset="../img/cinamonroll/cinamonroll__clasico.png" media="(min-width: 1024px)">
+                        <source srcset="../img/cinamonroll/cinamonroll__clasico.png" media="(min-width: 600px)">
+                        <img src="../img/cinamonroll/cinamonroll__clasico.png" alt="croissant" class="producto__item">
+                    </picture>
+
+                    <p>Cinamon roll clásico.<br>Con canela y dulce de leche por encima</p>
+                     <!--Toma el id 13 del array -->
+                    <button onclick="location.href='producto.html?id=13'" id="Btn__producto" class="Btn__producto">Comprar<button>
+
+                </div>
+                <div class="Card">
+                    <h3>Cookie de Pistacho </h3>
+                    <picture>
+                        <source srcset="../img/cookies/cookie__pistacho.png"  media="(min-width: 1024px)">
+                        <source srcset="../img/cookies/cookie__pistacho.png"  media="(min-width: 600px)">
+                        <img src="../img/cookies/cookie__pistacho.png" alt="croissant" class="producto__item">
+                    </picture>
+
+                    <p>Cookies de chocolate con relleno de chocolate blanco</p>
+                     <!--Toma el id 22 del array -->
+                    <button onclick="location.href='producto.html?id=22'" id="Btn__producto" class="Btn__producto">Comprar<button>
+
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION PEDIDO-->
+        <section class="pedido">
+            <div class="pedido__contenido">
+                <h2 class="pedido__subtitulo">Recibe tu pedido en menos de 48h</h2>
+                <p>Si haces tu pedido por más de 15€, el envío te sale gratis </p>
+                <div class="pedido__imagenes">
+                    <a href="productos.html" class="pedido__productos">Ver todos los productos</a>
+                </div>
+            </div>
+            <div class="img-pedido">
+                <picture>
+                    <source srcset="../img/logotipo/branding__mockup.png" media="(min-width: 1024px)">
+                    <source srcset="../img/logotipo/branding__mockup.png" media="(min-width: 600px)">
+                    <img src="../img/logotipo/branding__mockup.png" alt="pedido" class="box-sweet" loading="lazy">
+                </picture>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4>Abuela Emilia</h4>
+                <p>Reposteria artesanal con amor y tradicional</p>
+            </div>
+            <div class="footer__section">
+                <h4>Enlaces</h4>
+                <ul class="footer__lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="faq.html">FaQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <hr>
+                <p class="footer__copy">© 2025 Abuela Emilia. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

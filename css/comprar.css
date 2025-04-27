@@ -1,0 +1,102 @@
+/*---------Estilos para la página de producto.html----------*/
+
+.producto {
+    display: flex;
+    margin-top: 3rem;
+    padding: 3rem;
+
+}
+
+/*-------Estilos para los botones de sumar y restar*/
+.producto__compra--resta,
+.producto__compra--suma {
+
+    font-size: 2em;
+    color: #571018;
+    border: none;
+    background-color: #ecd5cc;
+    margin-top: 2rem;
+
+}
+
+/*-----Estilos del input de la cantidad del producto--------*/
+.inputNumber {
+    border: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+    background-color: #ecd5cc;
+}
+
+
+/*-----Estilo del precio del producto------*/
+
+.precio__producto {
+    font-size: 1.3em;
+}
+
+.producto__compra--carrito {
+    margin-top: 2rem;
+    width: 500px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #571018;
+    color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto__parrafo {
+    font-size: 1.3em;
+}
+
+/*--------MEDIA QUERIES-------*/
+
+/*---------Para tablets-------*/
+@media (max-width: 1024px) {
+    .producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+    }
+    .producto__compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+    .producto__parrafo{
+        text-align: center;
+    }
+    .producto_img{
+        width: 70%;
+    }
+}
+/*-----------Para dispositivos móviles-----------*/
+@media(max-width: 600px) {
+    .producto__titulo{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .producto__parrafo{
+        margin-top: 1rem;
+
+    }
+    .producto_img{
+        width: 100%;
+    }
+    .producto{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .producto__compra{
+        width: 100%;
+    }
+   
+    .producto__compra--carrito{
+        width: 300px;
+    }
+}
+;

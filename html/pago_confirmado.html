@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos__estructurales.css" class="rel">
+    <link rel="stylesheet" href="../css/reset.css" class="rel">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/pago_confirmado.css" class="rel">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/producto.js"></script>
+    <script src="../js/añadircarrito.js"></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <!--MENU-->
+        <nav class="nav">
+            <a href="index.html">
+                <img src="../img/logotipo/logotipo__abuelaemilia.png" alt="Logotipo Abuela Emilia"
+                    class="nav__logo">
+            </a>
+            <!--Creamos un div con la clase .nav__hamburguesa para que se vea el icono en pantallas pequeñas-->
+            <div class="nav__hamburguesa" id="nav__hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Aqui declaramos el nav, lo más importante es que el nav está compuesto del horizontal, que están los items principales y luego tenemos el nav vertical, que está dentro del horizontal y se trata del menu desplegable-->
+            <ul class="nav__horizontal" id="nav__horizontal">
+                <li class="nav__item menu__item--show">
+                    <a href="productos.html" class="nav__link">Productos</a>
+                    <ul class="nav__vertical">
+                        <li class="nav__vertical-item"><a href="./productos_donuts.html"
+                                class="nav__vertical-link">Donuts</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_croissants.html"
+                                class="nav__vertical-link">Croissants</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cinamonroll.html"
+                                class="nav__vertical-link">Cinamon Roll</a></li>
+                        <li class="nav__vertical-item"><a href="./productos_cookie.html"
+                                class="nav__vertical-link">Cookie</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="faq.html" class="nav__link">FaQ</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item">
+                    <a href="carrito.html" class="nav__link">
+                        <span class="material-icons-outlined">shopping_cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN-->
+    <main class="main">
+        <h2 class="main__title">¡Gracias por tu compra!</h2>
+        <h3 class="main__subtitulo">Tu pedido ha sido recibido y está siendo procesado</h3>
+        <p class="main__parrafo">Gracias por confiar en Abuel Emilia.Tu pedido ya forma parte de nuestras cocinas  </p>
+            <section class="producto">
+            <h3 class="producto__title">Otros productos que podrían gustarte</h3>
+                <div class="productos__grid">
+                    <div class="Card">
+                        <h3>Cookie de caramelo </h3>
+                        <img src="../img/cookies/cookie__caramelo.png" alt="croissant" class="producto__item">
+                        <p>Cookie de caramelo y chocolate con leche.<br>Cookie de caramelo, chocolate y trozitos de cacahuete</p>
+                        <button onclick="verProducto(19)" id="Btn__producto" class="Btn__producto">Comprar</button>
+
+                    </div>
+                    <div class="Card">
+                        <h3>Berlina rellena de mermelada</h3>
+                        <img src="../img/donuts/berlina__glaseada.png" alt="croissant" class="producto__item">
+                        <p>Berlina rellena de mermelada </p>
+                        <button onclick="verProducto(4)" id="Btn__producto" class="Btn__producto">Comprar</button>
+
+                    </div>
+                    <div class="Card">
+                        <h3>Donut Oreo</h3>
+                        <img src="../img/donuts/donut__oreo.png" alt="croissant" class="producto__item">
+                        <p>Donut Oreo<br>Donut con crema blanca de oreo con galleta por encima</p>
+                        <button onclick="verProducto(7)" id="Btn__producto" class="Btn__producto">Comprar</button>
+
+                    </div>
+                    <div class="Card">
+                        <h3>CinamonRoll de Pistacho </h3>
+                        <img src="../img/cinamonroll/cinamonroll__pistacho.png" alt="croissant" class="producto__item">
+                        <p>Cinamon Roll con crema de pistacho y trozos de pistacho</p>
+                        <button onclick="verProducto(15)" id="Btn__producto" class="Btn__producto">Comprar</button>
+
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4>Abuela Emilia</h4>
+                <p>Reposteria artesanal con amor y tradicional</p>
+            </div>
+            <div class="footer__section">
+                <h4>Enlaces</h4>
+                <ul class="footer__lista">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="desayunos.html">Desayunos</a></li>
+                    <li><a href="FaQ.html">FaQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <hr>
+                <p class="footer__copy">© 2025 Abuela Emilia. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
