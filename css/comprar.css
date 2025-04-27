@@ -83,6 +83,10 @@
         margin-top: 1rem;
 
     }
+    .inputNumber{
+        width: 60%;
+        margin-left: 1.5rem;
+    }
     .producto_img{
         width: 100%;
     }

@@ -46,6 +46,7 @@
 @media screen and (max-width: 600px) {
     .contacto{
         padding: 1rem;
+        margin-top: 12rem;
     }
     .contacto h1 {
         font-size: 2rem;
