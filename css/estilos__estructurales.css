@@ -1,30 +1,30 @@
 /*------FUENTES TIPOGRÁFICAs----------*/
 
-h1,h2{
-    font-family: 'Yesevea One', sans-serif;
-    font-size: 3em;
-}
 @font-face{
     font-family: 'Yesevea One';
-    src: url('./fonts/Yeseva_One/YesevaOne-Regular.ttf');
-}
-
-h3{
-    font-family: 'Poppins';
+    src: url('../fonts/Yeseva_One/YesevaOne-Regular.ttf');
 }
 @font-face{
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face{
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+  
+}
+h1,h2{
+  font-family: 'Yesevea One', sans-serif;
+  font-size: 3em;
+}
+h3{
     font-family: 'Poppins';
-    src: url('./fonts/Poppins/Poppins-Bold.ttf');
 }
 
 h4,p{
     font-family: 'Poppins', sans-serif;
 }
-@font-face{
-    font-family: 'Poppins';
-    src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
-    
-}
+
 /*----------ESTRUCTURA GENERAL----------*/
  body {
     background-color: #ecd5cc;
